@@ -22,11 +22,12 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--<mvc:interceptors>
+    <!--拦截器-->
+    <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <bean class="com.shy.oa.global.LoginInterceptor"/>
         </mvc:interceptor>
-    </mvc:interceptors>-->
+    </mvc:interceptors>
 
 </beans>
