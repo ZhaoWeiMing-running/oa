@@ -9,6 +9,7 @@ public class DealRecord {
 
     private Integer claimVoucherId;
 
+    //处理人肯定不能显示为编号
     private String dealSn;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm")
@@ -19,6 +20,10 @@ public class DealRecord {
     private String dealResult;
 
     private String comment;
+
+    //用实体类进行传递
+    private Employee dealer;
+
 
     public Integer getId() {
         return id;
@@ -76,7 +81,6 @@ public class DealRecord {
         this.comment = comment;
     }
 
-    private Employee dealer;
 
     public Employee getDealer() {
         return dealer;

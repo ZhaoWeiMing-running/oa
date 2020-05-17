@@ -1,6 +1,7 @@
 package com.shy.oa.dao;
 
 import com.shy.oa.entity.Employee;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -23,6 +24,10 @@ public interface EmployeeDao {
 
     List<Employee> selectAll();
 
+
+    //这是做到提交报销单的时候才有的
+    //查询部门和职位
+    List<Employee> selectByDepartmentAndPost(@Param("dsn") String dsn,@Param("post") String post);
 
 
 }

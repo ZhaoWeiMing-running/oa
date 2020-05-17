@@ -15,6 +15,7 @@
                     </div>
                     <div class="section row">
                         <div class="col-md-2">工号</div>
+                        <%--为什么要sessionScope--%>
                         <div class="col-md-4">${sessionScope.employee.sn}</div>
                         <div class="col-md-2">姓名</div>
                         <div class="col-md-4">${sessionScope.employee.name}</div>

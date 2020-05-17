@@ -25,7 +25,9 @@
     <!--拦截器-->
     <mvc:interceptors>
         <mvc:interceptor>
+            <!--拦截哪些路径，拦截所有-->
             <mvc:mapping path="/**"/>
+            <!--你是用哪个对象对拦截器进行处理-->
             <bean class="com.shy.oa.global.LoginInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
